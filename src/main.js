@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+//import { createApp } from 'vue'
+//import App from './App.vue'
 import router from './router'
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
@@ -13,4 +13,8 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
-createApp(App).use(router).mount('#app')
+//createApp(App).use(router).mount('#app')
+
+new Vue({
+    router
+  }).$mount('#app')

@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import  VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 
 const routes = [
@@ -27,9 +27,8 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHashHistory(),
-  routes
+const router = new VueRouter({
+  routes // short for `routes: routes`
 })
 
 export default router
